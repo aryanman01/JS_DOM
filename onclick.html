@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onchanges_event</title>
+</head>
+<body>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)">
+		Mouse over me
+	</div>
+	<p>Enter you name:<input type="text" id="fname" onchange="func()"></p>
+	<script type="text/javascript">
+		function func(){
+			var x=document.getElemetById("nm");
+			x.value=x.value.toUpperCase();
+		}
+		function mOver(obj){
+			obj.innerHTML = "Thanks";
+		}
+		function mOut(obj){
+			obj.innerHTML = "Mouse over me";
+		}
+	</script>
+</body>
+</html>
